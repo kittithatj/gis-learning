@@ -1,0 +1,21 @@
+:host {
+    ::ng-deep .block-btn {
+        width: 100%;
+    }
+
+    .locator-container {
+        display: inline-block;
+        padding: 20px;
+        margin: 40px;
+    }
+
+    .card {
+        background-color: white;
+        position: absolute;
+        top: 0;
+        right: 0;
+        box-shadow: 2px 2px 8px 4px #ababab64;
+        // border-radius: 5%;
+        z-index: 100;
+    }
+}

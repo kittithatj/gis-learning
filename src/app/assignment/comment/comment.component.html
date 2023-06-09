@@ -1,0 +1,28 @@
+<div style="margin: 10px;">
+    <h1>Assignment 1.3</h1>
+    <h2>Comment Form</h2>
+    <p *ngIf="uuid != null">Editing Comment...</p>
+    <form ngNativeValidate #commentForm="ngForm" (ngSubmit)="onSubmit(commentForm.value)">
+        <label>Name:</label>
+        <input type="text" name='name' [(ngModel)]="name" required value={{name}}>
+        <br>
+        <label>Comment:</label>
+        <br>
+        <textarea name="comment" [(ngModel)]="comment" required value={{comment}}></textarea>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    <h2>Comments</h2>
+    <p *ngIf="commentList.length == 0">No comment...</p>
+    <div *ngFor="let comment of commentList;index as i">
+        <h3><b>Comment [{{i+1}}]</b></h3>
+        <p><b>{{comment.name}}</b>&nbsp;{{comment.timeStamp}}</p>
+        <p>{{comment.comment}}</p>
+        <button (click)="editComment(comment)">Edit</button>
+        <button (click)="OnDelete(comment.uuid)">Delete</button>
+        <hr>
+    </div>
+
+    <!-- <app-locator [formTitle]="'My Home Location'" (customPointEmitter)="onSubmitCustompoint($event)"></app-locator> -->
+</div>

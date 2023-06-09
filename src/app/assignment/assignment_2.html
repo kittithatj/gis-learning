@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- internal css -->
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 5px;
+        }
+
+        th {
+            color: rgb(66, 66, 190);
+        }
+
+        h2 {
+            background-color: rgb(186, 235, 251);
+            color: rgb(61, 79, 176);
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .inline-block {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        img {
+            height: 250px;
+            float: right;
+        }
+
+        .full {
+            width: 100%;
+        }
+
+        .colspan {
+            color: rgb(66, 66, 190);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="inline-block">
+        <div class="full">
+            <h1>Salmon The Chubby Orange Cat</h1>
+            <h2>About</h2>
+            <p>Hello meow!</p>
+            <p>My name is Salmon and I really like to eat <a href="https://en.wikipedia.org/wiki/Salmon">salmon</a>!
+            </p>
+            <h2>Menu List</h2>
+            <p>Here are the menu I want to eat meow!</p>
+        </div>
+        <img
+            src="https://ca-times.brightspotcdn.com/dims4/default/0b19187/2147483647/strip/false/crop/1611x906+0+0/resize/1486x836!/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Ffd%2Fef%2F05c1aab3e76c3d902aa0548c0046%2Fla-la-hm-pet-issue-18-jpg-20150615">
+
+    </div>
+
+    <table>
+        <tr>
+            <th>ORDER</th>
+            <th>MENU</th>
+            <th>DESCRIPTION</th>
+        </tr>
+        <tr>
+            <td colspan="3" class="center colspan">Salmon main dishes</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Grilled Salmon</td>
+            <td>Seasoned salmon fillet grilled to perfection, served with a side of steamed vegetables or a salad.</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Salmon Teriyaki</td>
+            <td>Grilled or pan-seared salmon glazed with a flavorful teriyaki sauce, served with steamed rice and
+                stir-fried vegetables.</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Salmon Caesar Salad</td>
+            <td>Fresh romaine lettuce tossed with grilled salmon, Caesar dressing, croutons, and Parmesan cheese.</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="center colspan">Dessert Menu</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Chocolate Lava Cake</td>
+            <td>Decadent chocolate cake with a molten chocolate center, served with a scoop of vanilla ice cream.</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Strawberry Cheesecake</td>
+            <td>Creamy cheesecake topped with fresh strawberries and a drizzle of strawberry sauce.</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Tiramisu</td>
+            <td>A classic Italian dessert made with layers of espresso-soaked ladyfingers, mascarpone cheese, and cocoa
+                powder.</td>
+        </tr>
+    </table>
+
+    <h2>Interests</h2>
+    <p>I interested in salmon and all of the entired yummy foods in the world! <b>I live to eat, not eat to live.</b>
+    </p>
+    </p>
+
+    <h2>Submit your menu</h2>
+    <p>I just want to know which menu should I eat for my 3rd times dinner, leave a comment below.</p>
+    <label>Name:</label><input>
+    <br>
+    <label>Menu:</label><input>
+    <br>
+    <label>Comment:</label><input>
+    <br>
+    <button type="submit">Submit</button>
+
+</body>
+
+</html>

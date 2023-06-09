@@ -1,0 +1,30 @@
+<div class="locator-container card border-round-lg">
+    <h2>{{formTitle}}</h2>
+    <form [formGroup]="getLocatorForm" (ngSubmit)="onSubmit()">
+        <div>
+            <label for="latitude">Latitude:</label>
+            <br>
+            <p-inputNumber formControlName="latitude" mode="decimal" [maxFractionDigits]="8"> </p-inputNumber>
+        </div>
+        <div>
+            <label for="longtitude">Longtitude:</label>
+            <br>
+            <p-inputNumber formControlName="longtitude" mode="decimal" [maxFractionDigits]="8"> </p-inputNumber>
+        </div>
+        <div style="color:crimson"
+            *ngIf="getLocatorForm.get('latitude').errors?.['required'] || getLocatorForm.get('longtitude').errors?.['required']">
+            Coordinates are required.
+        </div>
+        <div style="color:crimson" class="text-xs" *ngIf="
+        getLocatorForm.get('latitude').errors?.['min'] ||
+        getLocatorForm.get('latitude').errors?.['max']||
+        getLocatorForm.get('longtitude').errors?.['min']||
+        getLocatorForm.get('longtitude').errors?.['max']">
+            Latitude must be between -85 to 85.<br>
+            Longtitude must be between -180 to 180.
+        </div>
+        <br>
+        <p-button type="submit" label="Locate" styleClass="p-button-success block-btn"
+            [disabled]="getLocatorForm.invalid"></p-button>
+    </form>
+</div>
