@@ -8,7 +8,7 @@ import { LocatorComponent } from '../locator/locator.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'comment',
     component: CommentComponent,
   },
   {
@@ -16,7 +16,7 @@ const routes: Routes = [
     component: MapComponent,
   },
   {
-    path: 'map/identify',
+    path: 'map-identify',
     component: MapIdentifyComponent,
   },
   {

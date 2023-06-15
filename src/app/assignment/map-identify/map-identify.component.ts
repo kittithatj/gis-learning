@@ -120,6 +120,8 @@ export class MapIdentifyComponent implements OnInit {
   }
 
   createPolygon(rings: any) {
+    console.log(rings);
+
     this.mapservice.mapView.graphics.remove(this.polygonArea);
     let polygon = {
       type: "polygon",

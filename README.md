@@ -1,27 +1,27 @@
-# ClientApp
+Github Repository Link : https://github.com/kittithatj/gis-learning
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+ส่ง Assignment Web Beginner
 
-## Development server
+นายกิตติธัช โจหิงค์ T00983 (GIS)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Assignment 1.1 CSS
+files : src\app\assignment\assignment_1.1.html
 
-## Code scaffolding
+Assignment 1.2 HTML Web Page
+files : src\app\assignment\assignment_1.2.html
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Assignment 1.3 Comment Simulation
+files : src\app\assignment\comment
+path : http://localhost:4200/comment
 
-## Build
+Assignment 2 Locator Component
+files : src\app\assignment\locator
+path : http://localhost:4200/locator
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Assignment 3 Web Map Application
+files : src\app\assignment\map
+path : http://localhost:4200/map
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Assignment 4 Identify Task
+files : src\app\assignment\map-identify
+path : http://localhost:4200/map-identify

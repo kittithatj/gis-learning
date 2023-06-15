@@ -9,6 +9,7 @@ import { MapService } from '../map.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { InputNumberModule } from 'primeng/inputnumber';
 import { ButtonModule } from 'primeng/button';
+import { TableModule } from 'primeng/table';
 
 @NgModule({
   declarations: [CommentComponent, LocatorComponent, MapComponent, MapIdentifyComponent],
@@ -18,7 +19,8 @@ import { ButtonModule } from 'primeng/button';
     AssignmentRoutingModule,
     ReactiveFormsModule,
     InputNumberModule,
-    ButtonModule
+    ButtonModule,
+    TableModule
   ],
   providers: [MapService],
   bootstrap: [CommentComponent]

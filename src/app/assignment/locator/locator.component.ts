@@ -2,7 +2,6 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 import CustomPoint from '../customPoint';
-import { Point } from '@arcgis/core/geometry';
 
 @Component({
   selector: 'app-locator',
